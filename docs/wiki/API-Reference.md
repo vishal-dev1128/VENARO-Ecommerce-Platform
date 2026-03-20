@@ -1,44 +1,112 @@
-# API Reference 🔌
+# API Reference
 
-VÉNARO uses AJAX extensively for a smooth, single-page feel. Most endpoints are located in the `api/` directory.
+All AJAX endpoints live in the `/api/` directory and respond in JSON.
 
----
+## Endpoints
 
-## 🛒 Cart Management
+### `POST /api/cart-add.php`
+Add a product to the cart.
 
-### `cart-add.php`
-- **Method**: `POST`
-- **Target**: Adds a product variant to the cart.
-- **Payload**: `product_id`, `variant_id`, `quantity`.
-
-### `cart-update.php`
-- **Method**: `POST`
-- **Target**: Updates the quantity of a cart item.
-- **Payload**: `cart_id`, `quantity`.
-
----
-
-## ❤️ Wishlist Management
-
-### `wishlist-toggle.php`
-- **Method**: `POST`
-- **Target**: Adds or removes a product from the user's wishlist.
-- **Payload**: `product_id`.
+**Request body:**
+```json
+{ "product_id": 1, "quantity": 2 }
+```
+**Response:**
+```json
+{ "success": true, "cart_count": 3 }
+```
 
 ---
 
-## 📩 Marketing
+### `POST /api/coupon-apply.php`
+Apply a coupon code at checkout.
 
-### `newsletter-subscribe.php`
-- **Method**: `POST`
-- **Target**: Subscribes an email address to the newsletter.
-- **Payload**: `email`.
+**Request body:**
+```json
+{ "code": "SAVE20" }
+```
+**Response:**
+```json
+{ "success": true, "discount": 200, "type": "percent" }
+```
 
 ---
 
-## 🔐 Auth Helpers
+### `POST /api/wishlist-toggle.php`
+Toggle a product in the user's wishlist.
 
-### `check-email.php`
-- **Method**: `GET`
-- **Target**: Checks if an email is already registered (used for real-time validation).
-- **Params**: `email`.
+**Request body:**
+```json
+{ "product_id": 5 }
+```
+**Response:**
+```json
+{ "success": true, "in_wishlist": true }
+```
+
+---
+
+### `POST /api/review-submit.php`
+Submit a product review.
+
+**Request body:**
+```json
+{ "product_id": 3, "rating": 5, "comment": "Excellent!" }
+```
+**Response:**
+```json
+{ "success": true }
+```
+
+---
+
+### `GET /api/search-suggestions.php?q=watch`
+Get live search suggestions.
+
+**Response:**
+```json
+[{ "id": 1, "name": "Luxury Watch", "slug": "luxury-watch" }]
+```
+
+---
+
+### `POST /api/newsletter-subscribe.php`
+Subscribe to the newsletter.
+
+**Request body:**
+```json
+{ "email": "user@example.com" }
+```
+**Response:**
+```json
+{ "success": true }
+```
+
+---
+
+### `POST /api/change-password.php`
+Change logged-in user's password.
+
+**Request body:**
+```json
+{ "current_password": "...", "new_password": "..." }
+```
+
+---
+
+### `POST /api/update-profile.php`
+Update user profile information.
+
+---
+
+### `POST /api/cancel-order.php`
+Cancel an order (if in pending status).
+
+**Request body:**
+```json
+{ "order_id": 12 }
+```
+
+---
+
+> All endpoints return `{ "success": false, "message": "..." }` on failure.

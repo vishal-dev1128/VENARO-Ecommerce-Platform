@@ -1,4 +1,4 @@
-# 💎 VÉNARO — The Ultimate Premium E-Commerce Platform
+# 💎 VÉNARO — E-Commerce Website
 
 **A masterclass in full-stack web engineering. Built with PHP 8.2 & MySQL 8.0 for the modern luxury market.**
 
@@ -205,9 +205,9 @@ VENARO-Ecommerce-Website/
 
 For software engineers, DevOps, and administrators aiming to fork, extend, or deeply understand VÉNARO, refer to our highly detailed internal markdown wiki:
 
-- **[🏗️ System Architecture & Data Modeling](./docs/wiki/architecture.md)**: Deep dive into the entity-relationship diagrams and structural patterns.
-- **[🔌 Headless API Reference](./docs/wiki/api.md)**: Comprehensive technical specs, payload expectations, and response schemas for all AJAX service endpoints.
-- **[⚙️ Admin Operations Guide](./docs/wiki/admin.md)**: The ultimate playbook for managing the e-commerce lifecycle efficiently.
+- **[🏗️ System Architecture & Data Modeling](./docs/wiki/Architecture.md)**: Deep dive into the entity-relationship diagrams and structural patterns.
+- **[🔌 Headless API Reference](./docs/wiki/API-Reference.md)**: Comprehensive technical specs, payload expectations, and response schemas for all AJAX service endpoints.
+- **[⚙️ Admin Operations Guide](./docs/wiki/Admin-Guide.md)**: The ultimate playbook for managing the e-commerce lifecycle efficiently.
 
 ---
 
