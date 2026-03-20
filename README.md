@@ -1,26 +1,102 @@
 <div align="center">
 
-<img src="uploads/venaro-logo.png" alt="VÉNARO Logo" width="180"/>
+<img src="docs/logo/1771487096721 (1).png" alt="VÉNARO Logo" width="160" style="margin-bottom: 16px"/>
 
-# VÉNARO — Premium E-Commerce Platform
+<h1>VÉNARO — Premium E-Commerce Platform</h1>
 
-**A full-stack, PHP-powered luxury e-commerce platform built for performance, security, and elegance.**
+<p><strong>A full-stack, PHP-powered luxury e-commerce platform built for performance, security, and elegance.</strong></p>
 
 [![CI/CD Pipeline](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website/actions/workflows/main.yml/badge.svg)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website/actions/workflows/main.yml)
-[![CodeQL](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website/actions/workflows/main.yml/badge.svg?branch=main&event=push)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website/actions/workflows/main.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg)](./LICENSE)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-8892BF?logo=php&logoColor=white)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql&logoColor=white)](https://mysql.com)
+[![Security](https://img.shields.io/badge/Security-CodeQL-green?logo=github)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website/security)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website/pulls)
 
-[📖 Documentation](#documentation) · [🚀 Quick Start](#quick-start) · [🛡️ Security](#security) · [🤝 Contributing](#contributing)
+<br/>
+
+[📖 Documentation](#-documentation) &nbsp;·&nbsp; [🚀 Quick Start](#-quick-start) &nbsp;·&nbsp; [🛡️ Security](#-security) &nbsp;·&nbsp; [🤝 Contributing](#-contributing)
 
 ---
 
 </div>
 
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/main page.png" alt="Home Page" width="100%"/>
+      <br/><sub><b>🏠 Home Page</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/products page.png" alt="Products Page" width="100%"/>
+      <br/><sub><b>🛍️ Products / Shop</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/product detail page.png" alt="Product Detail" width="100%"/>
+      <br/><sub><b>🔍 Product Detail</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/category page.png" alt="Category Page" width="100%"/>
+      <br/><sub><b>📂 Category Page</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/new arrival page.png" alt="New Arrivals" width="100%"/>
+      <br/><sub><b>✨ New Arrivals</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/about page.png" alt="About Page" width="100%"/>
+      <br/><sub><b>ℹ️ About Page</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/cart page.png" alt="Cart" width="100%"/>
+      <br/><sub><b>🛒 Shopping Cart</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/checkout page.png" alt="Checkout" width="100%"/>
+      <br/><sub><b>💳 Checkout</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/order confirm page.png" alt="Order Confirmation" width="100%"/>
+      <br/><sub><b>✅ Order Confirmation</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/user dashboard.png" alt="User Dashboard" width="100%"/>
+      <br/><sub><b>👤 User Dashboard</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/login and signup page.png" alt="Login & Signup" width="100%"/>
+      <br/><sub><b>🔐 Login & Signup</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/contact page.png" alt="Contact Page" width="100%"/>
+      <br/><sub><b>📬 Contact Page</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="100%" colspan="2">
+      <img src="docs/screenshots/admin dashboard.png" alt="Admin Dashboard" width="80%"/>
+      <br/><sub><b>⚙️ Admin Dashboard</b></sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## ✨ Overview
 
-**VÉNARO** is a premium, full-featured e-commerce platform developed with PHP and MySQL. It is designed from the ground up with security, scalability, and a luxury shopping experience in mind. From product discovery to order management, every flow is crafted with care.
+**VÉNARO** is a premium, full-featured e-commerce platform developed with PHP and MySQL. It is designed from the ground up with security, scalability, and a luxury shopping experience in mind. Every page — from product discovery to order confirmation — is crafted with care.
 
 ---
 
@@ -28,13 +104,13 @@
 
 | Feature | Description |
 |---|---|
-| 🛍️ **Product Catalog** | Full product listing with filters, categories & collections |
-| 🔍 **Smart Search** | Live search suggestions with AJAX |
+| 🛍️ **Product Catalog** | Full listing with filters, categories & collections |
+| 🔍 **Smart Search** | Live AJAX search suggestions |
 | 🛒 **Cart & Checkout** | Session-based cart with coupon support |
 | 💳 **Order Management** | End-to-end order flow with status tracking |
-| 👤 **User Accounts** | Registration, login, wishlist, and profile management |
+| 👤 **User Accounts** | Registration, login, wishlist, profile management |
 | 🎟️ **Coupon System** | Percent or flat discount coupons |
-| ⭐ **Reviews & Ratings** | Product reviews with star ratings |
+| ⭐ **Reviews & Ratings** | Verified product reviews with star ratings |
 | 🔔 **Newsletter** | Email subscription system |
 | 🔒 **Admin Panel** | Full-featured dashboard for products, orders, customers |
 | 🛡️ **Security-First** | PDO prepared statements, bcrypt passwords, input validation |
@@ -45,28 +121,25 @@
 
 ```
 VENARO-Ecommerce-Website/
-├── .github/                # GitHub CI/CD, security, templates
-│   ├── workflows/          # GitHub Actions (CI/CD + CodeQL)
-│   ├── ISSUE_TEMPLATE/     # Bug report & feature request templates
+├── .github/                # CI/CD, security policy, templates
+│   ├── workflows/          # GitHub Actions (PHP lint + CodeQL)
+│   ├── ISSUE_TEMPLATE/     # Bug & feature request templates
 │   ├── PULL_REQUEST_TEMPLATE.md
 │   ├── SECURITY.md
 │   └── dependabot.yml
 ├── admin/                  # Admin panel (dashboard, products, orders)
 ├── api/                    # AJAX API endpoints
 ├── assets/                 # CSS, JS, Images
-│   ├── css/
-│   ├── js/
-│   └── images/
 ├── config.php              # Database & app configuration
 ├── database/               # SQL schema dump
-├── docs/                   # Project documentation & wiki
-│   ├── wiki/               # GitHub Wiki content
+├── docs/
+│   ├── logo/               # Brand assets
 │   ├── screenshots/        # App screenshots
-│   └── logo/               # Brand assets
-├── includes/               # Shared PHP partials (header, footer, auth)
-├── uploads/                # User-uploaded media (products, categories)
+│   └── wiki/               # Documentation
+├── includes/               # Shared PHP partials (header, footer)
+├── uploads/                # User-uploaded media
 ├── .gitignore
-├── .htaccess               # Apache URL rewriting & security headers
+├── .htaccess               # URL rewriting & security headers
 ├── LICENSE
 └── README.md
 ```
@@ -77,37 +150,37 @@ VENARO-Ecommerce-Website/
 
 ### Prerequisites
 
-- [XAMPP](https://www.apachefriends.org/) (or any PHP 8.2+ / MySQL 8.0+ stack)
+- [XAMPP](https://www.apachefriends.org/) (PHP 8.2+ / MySQL 8.0+)
 - PHP 8.2+
 - MySQL 8.0+
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/vishal-dev1128/VENARO-Ecommerce-Website.git
-   cd VENARO-Ecommerce-Website
-   ```
+**1. Clone the repository**
+```bash
+git clone https://github.com/vishal-dev1128/VENARO-Ecommerce-Website.git
+cd VENARO-Ecommerce-Website
+```
 
-2. **Set up the database**
-   - Open [phpMyAdmin](http://localhost/phpmyadmin)
-   - Create a new database: `venaro_db`
-   - Import `database/venaro_db.sql`
+**2. Set up the database**
+- Open [phpMyAdmin](http://localhost/phpmyadmin)
+- Create a database: `venaro_db`
+- Import `database/venaro_db.sql`
 
-3. **Configure the application**
-   - Open `config.php`
-   - Update database credentials:
-     ```php
-     define('DB_HOST', 'localhost');
-     define('DB_NAME', 'venaro_db');
-     define('DB_USER', 'root');
-     define('DB_PASS', '');
-     ```
+**3. Configure the application**
 
-4. **Start Apache & MySQL** in XAMPP, then visit:
-   ```
-   http://localhost/new-venaro/
-   ```
+Open `config.php` and update:
+```php
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'venaro_db');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+```
+
+**4. Start XAMPP** (Apache + MySQL), then visit:
+```
+http://localhost/VENARO-Ecommerce-Website/
+```
 
 ### Admin Access
 
@@ -117,21 +190,17 @@ VENARO-Ecommerce-Website/
 | Email    | `admin@venaro.com` |
 | Password | `admin123`         |
 
-> ⚠️ **Change the admin password** immediately after first login in production.
+> ⚠️ **Change the admin password** immediately in a production environment.
 
 ---
 
 ## 📖 Documentation
 
-Comprehensive documentation is available in the [`docs/wiki/`](./docs/wiki/) directory:
-
 | Document | Description |
 |---|---|
 | [Architecture Overview](./docs/wiki/architecture.md) | System design and folder structure |
-| [Feature Guide](./docs/wiki/features.md) | All features in detail |
-| [API Reference](./docs/wiki/api.md) | AJAX endpoints |
-| [Admin Manual](./docs/wiki/admin.md) | Admin panel guide |
-| [Setup Guide](./docs/wiki/setup.md) | Full installation instructions |
+| [API Reference](./docs/wiki/api.md) | AJAX endpoint documentation |
+| [Admin Manual](./docs/wiki/admin.md) | Admin panel user guide |
 
 ---
 
@@ -140,37 +209,36 @@ Comprehensive documentation is available in the [`docs/wiki/`](./docs/wiki/) dir
 Security is a first-class concern in VÉNARO:
 
 - **SQL Injection** prevention via PDO prepared statements
-- **Password Security** via PHP `password_hash()` (bcrypt)
+- **Password Security** via `password_hash()` (bcrypt)
 - **Session Protection** via `session_regenerate_id()`
 - **Input Validation** on all user-facing forms
-- **File Upload Restrictions** (JPEG, PNG, WEBP only; max 5MB)
+- **File Upload Restrictions** — JPEG, PNG, WEBP only; max 5MB
 - **HTTPS Enforcement** via `.htaccess`
-- **Access Control** — admin routes protected by role checks
 
-To report a security vulnerability, see [SECURITY.md](.github/SECURITY.md).
+To report a vulnerability, see [SECURITY.md](.github/SECURITY.md).
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please read our [contribution guide](.github/PULL_REQUEST_TEMPLATE.md) before submitting a PR.
+We welcome contributions!
 
 1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'feat: add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
+2. Create your branch: `git checkout -b feature/your-feature`
+3. Commit: `git commit -m 'feat: add your feature'`
+4. Push: `git push origin feature/your-feature`
 5. Open a Pull Request
 
 ---
 
 ## 📜 License
 
-Distributed under the MIT License. See [LICENSE](./LICENSE) for details.
+Distributed under the **MIT License**. See [LICENSE](./LICENSE) for details.
 
 ---
 
 <div align="center">
 
-Made with ❤️ by **Vishal** | VÉNARO Premium E-Commerce © 2025
+Made with ❤️ by **Vishal** &nbsp;|&nbsp; VÉNARO Premium E-Commerce © 2025
 
 </div>
