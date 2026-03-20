@@ -17,7 +17,3 @@ Welcome to the ultimate guide for the VÉNARO Premium E-Commerce Platform.
 
 ### Developer Core
 6. [🔌 API Reference](API-Reference)
-
----
-<br/>
-<sub>**Engineered by Vishal**<br/><i>All Rights Reserved.</i></sub>
