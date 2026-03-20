@@ -14,10 +14,40 @@
 
 [📖 Documentation](#-documentation) &nbsp;·&nbsp; [🚀 Quick Start](#-quick-start) &nbsp;·&nbsp; [🛡️ Security](#-security) &nbsp;·&nbsp; [🤝 Contributing](#-contributing)
 
----
-
 </div>
 
+## 🚀 Quick Start
+
+### 📋 Prerequisites
+- **Web Server**: Apache 2.4+ (XAMPP recommended)
+- **Engine**: PHP 8.2+
+- **Storage**: MySQL 8.0+
+
+### 🛠️ Installation
+
+1. **Clone & Enter**
+   ```bash
+   git clone https://github.com/vishal-dev1128/VENARO-Ecommerce-Website.git
+   cd VENARO-Ecommerce-Website
+   ```
+
+2. **Database Setup**
+   - Create a database `venaro_db` in [phpMyAdmin](http://localhost/phpmyadmin).
+   - Import the schema from `database/venaro_db.sql`.
+
+3. **Configuration**
+   Update `config.php` with your local credentials:
+   ```php
+   define('DB_HOST', 'localhost');
+   define('DB_NAME', 'venaro_db');
+   define('DB_USER', 'root');
+   define('DB_PASS', '');
+   ```
+
+4. **Launch**
+   Open your browser and navigate to `http://localhost/VENARO-Ecommerce-Website/`
+
+---
 ## 📸 Project Showcase
 
 <table border="0">
@@ -105,39 +135,6 @@ VENARO-Ecommerce-Website/
 ├── LICENSE                 # MIT License
 └── README.md               # You are here
 ```
-
----
-
-## 🚀 Quick Start
-
-### 📋 Prerequisites
-- **Web Server**: Apache 2.4+ (XAMPP recommended)
-- **Engine**: PHP 8.2+
-- **Storage**: MySQL 8.0+
-
-### 🛠️ Installation
-
-1. **Clone & Enter**
-   ```bash
-   git clone https://github.com/vishal-dev1128/VENARO-Ecommerce-Website.git
-   cd VENARO-Ecommerce-Website
-   ```
-
-2. **Database Setup**
-   - Create a database `venaro_db` in [phpMyAdmin](http://localhost/phpmyadmin).
-   - Import the schema from `database/venaro_db.sql`.
-
-3. **Configuration**
-   Update `config.php` with your local credentials:
-   ```php
-   define('DB_HOST', 'localhost');
-   define('DB_NAME', 'venaro_db');
-   define('DB_USER', 'root');
-   define('DB_PASS', '');
-   ```
-
-4. **Launch**
-   Open your browser and navigate to `http://localhost/VENARO-Ecommerce-Website/`
 
 ---
 
