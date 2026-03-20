@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/logo/1771487096721 (1).png" alt="VÉNARO Logo" width="180"/>
+<img src="uploads/venaro-logo.png" alt="VÉNARO Logo" width="180"/>
 
 # VÉNARO — Premium E-Commerce Platform
 
