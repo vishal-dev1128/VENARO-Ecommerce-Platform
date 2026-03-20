@@ -5,7 +5,7 @@
 [![Version](https://img.shields.io/badge/Version-1.0.0--stable-gold.svg?style=for-the-badge)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-8892BF?logo=php&logoColor=white&style=for-the-badge)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql&logoColor=white&style=for-the-badge)](https://mysql.com)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg?style=for-the-badge)](./LICENSE)
 
 [![CI/CD Pipeline](https://img.shields.io/github/actions/workflow/status/vishal-dev1128/VENARO-Ecommerce-Website/main.yml?branch=main&label=CI%2FCD&logo=github&style=flat-square)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website/actions)
 [![Security Scan](https://img.shields.io/github/actions/workflow/status/vishal-dev1128/VENARO-Ecommerce-Website/main.yml?branch=main&label=Security%20(CodeQL)&logo=github-actions&style=flat-square)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website/security)
@@ -224,9 +224,9 @@ VÉNARO thrives on community innovation. If you're a developer looking to improv
 
 ## 📜 Legal & Credits
 
-- **License**: Released natively under the [MIT License](./LICENSE). Build upon it freely.
+- **License**: Strictly **All Rights Reserved**. Portfolio and demonstration use only.
 - **Architect & Author**: Engineered with absolute precision by **Vishal**.
-- **Special Thanks**: Built with support from modern web standards, the PHP core team, and the open-source GitHub community.
+- **Usage Notice**: Unauthorized copying, modification, or distribution is prohibited without written consent from the author.
 
 <br/>
 
