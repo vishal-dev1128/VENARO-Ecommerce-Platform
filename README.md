@@ -1,7 +1,3 @@
-<div align="center">
-
-<img src="docs/logo/1771487096721 (1).png" alt="VÉNARO Logo" width="220" style="margin-bottom: 20px"/>
-
 # 💎 VÉNARO — The Ultimate Premium E-Commerce Platform
 
 **A masterclass in full-stack web engineering. Built with PHP 8.2 & MySQL 8.0 for the modern luxury market.**
@@ -66,22 +62,12 @@ Ensure your local development or production environment meets these strict requi
 
 A picture is worth a thousand lines of code. Explore every meticulously designed interface of the VÉNARO platform.
 
-### Customer Journey
+### User Journey & Website Flow
 <table border="0" style="width: 100%; border-collapse: collapse;">
   <tr>
     <td align="center" width="50%" style="padding: 10px;">
       <a href="docs/screenshots/main page.png"><img src="docs/screenshots/main page.png" alt="Home Page" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
       <br/><br/><sub><b>🏠 The Grand Entrance (Home)</b></sub>
-    </td>
-    <td align="center" width="50%" style="padding: 10px;">
-      <a href="docs/screenshots/products page.png"><img src="docs/screenshots/products page.png" alt="Shop Page" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
-      <br/><br/><sub><b>🛍️ Curated Collections (Shop)</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" style="padding: 10px;">
-      <a href="docs/screenshots/product detail page.png"><img src="docs/screenshots/product detail page.png" alt="Product Detail" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
-      <br/><br/><sub><b>🔍 Immersive Discovery (Detail)</b></sub>
     </td>
     <td align="center" width="50%" style="padding: 10px;">
       <a href="docs/screenshots/category page.png"><img src="docs/screenshots/category page.png" alt="Category Browsing" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
@@ -94,58 +80,52 @@ A picture is worth a thousand lines of code. Explore every meticulously designed
       <br/><br/><sub><b>✨ Highlighted New Arrivals</b></sub>
     </td>
     <td align="center" width="50%" style="padding: 10px;">
-      <a href="docs/screenshots/about page.png"><img src="docs/screenshots/about page.png" alt="About Us" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
-      <br/><br/><sub><b>📖 Brand Storytelling (About)</b></sub>
+      <a href="docs/screenshots/products page.png"><img src="docs/screenshots/products page.png" alt="Shop Page" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
+      <br/><br/><sub><b>🛍️ Curated Collections (Shop)</b></sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%" style="padding: 10px;">
-      <a href="docs/screenshots/contact page.png"><img src="docs/screenshots/contact page.png" alt="Contact Us" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
-      <br/><br/><sub><b>📬 Premium Contact Form</b></sub>
+      <a href="docs/screenshots/product detail page.png"><img src="docs/screenshots/product detail page.png" alt="Product Detail" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
+      <br/><br/><sub><b>🔍 Immersive Discovery (Detail)</b></sub>
     </td>
     <td align="center" width="50%" style="padding: 10px;">
-      <a href="docs/screenshots/footer.png"><img src="docs/screenshots/footer.png" alt="Footer Design" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
-      <br/><br/><sub><b>🏛️ Elegant Footer Navigation</b></sub>
-    </td>
-  </tr>
-</table>
-
-### Authentication & Account Management
-<table border="0" style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td align="center" width="50%" style="padding: 10px;">
-      <a href="docs/screenshots/login and signup page.png"><img src="docs/screenshots/login and signup page.png" alt="Authentication" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
-      <br/><br/><sub><b>🔐 Secure Login & Registration</b></sub>
-    </td>
-    <td align="center" width="50%" style="padding: 10px;">
-      <a href="docs/screenshots/user dashboard.png"><img src="docs/screenshots/user dashboard.png" alt="User Profile" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
-      <br/><br/><sub><b>👤 Personal Style Profile & History</b></sub>
-    </td>
-  </tr>
-</table>
-
-### Transaction Lifecycle
-<table border="0" style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td align="center" width="33%" style="padding: 10px;">
       <a href="docs/screenshots/cart page.png"><img src="docs/screenshots/cart page.png" alt="Shopping Cart" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
       <br/><br/><sub><b>🛒 Smart Cart System</b></sub>
     </td>
-    <td align="center" width="33%" style="padding: 10px;">
+  </tr>
+  <tr>
+    <td align="center" width="50%" style="padding: 10px;">
       <a href="docs/screenshots/checkout page.png"><img src="docs/screenshots/checkout page.png" alt="Secure Checkout" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
       <br/><br/><sub><b>💳 Frictionless Checkout</b></sub>
     </td>
-    <td align="center" width="33%" style="padding: 10px;">
+    <td align="center" width="50%" style="padding: 10px;">
       <a href="docs/screenshots/order confirm page.png"><img src="docs/screenshots/order confirm page.png" alt="Order Confirmation" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
       <br/><br/><sub><b>✅ Success Validation</b></sub>
     </td>
   </tr>
-</table>
-
-### Administrative Control
-<table border="0" style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td align="center" width="100%" style="padding: 10px;">
+    <td align="center" width="50%" style="padding: 10px;">
+      <a href="docs/screenshots/about page.png"><img src="docs/screenshots/about page.png" alt="About Us" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
+      <br/><br/><sub><b>📖 Brand Storytelling (About)</b></sub>
+    </td>
+    <td align="center" width="50%" style="padding: 10px;">
+      <a href="docs/screenshots/contact page.png"><img src="docs/screenshots/contact page.png" alt="Contact Us" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
+      <br/><br/><sub><b>📬 Premium Contact Form</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%" style="padding: 10px;">
+      <a href="docs/screenshots/user dashboard.png"><img src="docs/screenshots/user dashboard.png" alt="User Profile" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
+      <br/><br/><sub><b>👤 Personal Style Profile & History</b></sub>
+    </td>
+    <td align="center" width="50%" style="padding: 10px;">
+      <a href="docs/screenshots/login and signup page.png"><img src="docs/screenshots/login and signup page.png" alt="Authentication" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
+      <br/><br/><sub><b>🔐 Secure Login & Registration</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" style="padding: 10px;">
       <a href="docs/screenshots/admin dashboard.png"><img src="docs/screenshots/admin dashboard.png" alt="Admin Dashboard" width="80%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/></a>
       <br/><br/><sub><b>⚙️ The Command Center (Admin Analytics & Management)</b></sub>
     </td>
