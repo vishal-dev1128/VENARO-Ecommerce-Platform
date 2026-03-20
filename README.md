@@ -2,7 +2,7 @@
 
 <img src="docs/logo/1771487096721 (1).png" alt="VÉNARO Logo" width="180"/>
 
-# V├ëNARO ΓÇö Premium E-Commerce Platform
+# VÉNARO — Premium E-Commerce Platform
 
 **A full-stack, PHP-powered luxury e-commerce platform built for performance, security, and elegance.**
 
@@ -12,68 +12,15 @@
 [![PHP](https://img.shields.io/badge/PHP-8.2+-8892BF?logo=php&logoColor=white)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql&logoColor=white)](https://mysql.com)
 
-[≡ƒôû Documentation](#documentation) ┬╖ [≡ƒÜÇ Quick Start](#quick-start) ┬╖ [≡ƒ¢í∩╕Å Security](#security) ┬╖ [≡ƒñ¥ Contributing](#contributing)
+[📖 Documentation](#documentation) · [🚀 Quick Start](#quick-start) · [🛡️ Security](#security) · [🤝 Contributing](#contributing)
 
 ---
 
 </div>
 
-## Γ£¿ Overview
+## ✨ Overview
 
-**V├ëNARO** is a premium, full-featured e-commerce platform developed with PHP and MySQL. It is designed from the ground up with security, scalability, and a luxury shopping experience in mind. From product discovery to order management, every flow is crafted with care.
-
----
-
-## 📸 Screenshots
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/main page.png" alt="Home Page" width="100%"/>
-      <br/><sub><b>🏠 Home Page</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/products page.png" alt="Products Page" width="100%"/>
-      <br/><sub><b>🛍️ Products / Shop</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/product detail page.png" alt="Product Detail" width="100%"/>
-      <br/><sub><b>🔍 Product Detail</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/new arrival page.png" alt="New Arrivals" width="100%"/>
-      <br/><sub><b>✨ New Arrivals</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/cart page.png" alt="Cart" width="100%"/>
-      <br/><sub><b>🛒 Shopping Cart</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/checkout page.png" alt="Checkout" width="100%"/>
-      <br/><sub><b>💳 Checkout</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/user dashboard.png" alt="User Dashboard" width="100%"/>
-      <br/><sub><b>👤 User Dashboard</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/login and signup page.png" alt="Login & Signup" width="100%"/>
-      <br/><sub><b>🔐 Login & Signup</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
-      <img src="docs/screenshots/admin dashboard.png" alt="Admin Dashboard" width="80%"/>
-      <br/><sub><b>⚙️ Admin Dashboard</b></sub>
-    </td>
-  </tr>
-</table>
+**VÉNARO** is a premium, full-featured e-commerce platform developed with PHP and MySQL. It is designed from the ground up with security, scalability, and a luxury shopping experience in mind. From product discovery to order management, every flow is crafted with care.
 
 ---
 
@@ -81,52 +28,52 @@
 
 | Feature | Description |
 |---|---|
-| ≡ƒ¢ì∩╕Å **Product Catalog** | Full product listing with filters, categories & collections |
-| ≡ƒöì **Smart Search** | Live search suggestions with AJAX |
-| ≡ƒ¢Æ **Cart & Checkout** | Session-based cart with coupon support |
-| ≡ƒÆ│ **Order Management** | End-to-end order flow with status tracking |
-| ≡ƒæñ **User Accounts** | Registration, login, wishlist, and profile management |
-| ≡ƒÄƒ∩╕Å **Coupon System** | Percent or flat discount coupons |
-| Γ¡É **Reviews & Ratings** | Product reviews with star ratings |
-| ≡ƒöö **Newsletter** | Email subscription system |
-| ≡ƒöÆ **Admin Panel** | Full-featured dashboard for products, orders, customers |
-| ≡ƒ¢í∩╕Å **Security-First** | PDO prepared statements, bcrypt passwords, input validation |
+| 🛍️ **Product Catalog** | Full product listing with filters, categories & collections |
+| 🔍 **Smart Search** | Live search suggestions with AJAX |
+| 🛒 **Cart & Checkout** | Session-based cart with coupon support |
+| 💳 **Order Management** | End-to-end order flow with status tracking |
+| 👤 **User Accounts** | Registration, login, wishlist, and profile management |
+| 🎟️ **Coupon System** | Percent or flat discount coupons |
+| ⭐ **Reviews & Ratings** | Product reviews with star ratings |
+| 🔔 **Newsletter** | Email subscription system |
+| 🔒 **Admin Panel** | Full-featured dashboard for products, orders, customers |
+| 🛡️ **Security-First** | PDO prepared statements, bcrypt passwords, input validation |
 
 ---
 
-## ≡ƒùé∩╕Å Project Structure
+## 🗂️ Project Structure
 
 ```
 VENARO-Ecommerce-Website/
-Γö£ΓöÇΓöÇ .github/                # GitHub CI/CD, security, templates
-Γöé   Γö£ΓöÇΓöÇ workflows/          # GitHub Actions (CI/CD + CodeQL)
-Γöé   Γö£ΓöÇΓöÇ ISSUE_TEMPLATE/     # Bug report & feature request templates
-Γöé   Γö£ΓöÇΓöÇ PULL_REQUEST_TEMPLATE.md
-Γöé   Γö£ΓöÇΓöÇ SECURITY.md
-Γöé   ΓööΓöÇΓöÇ dependabot.yml
-Γö£ΓöÇΓöÇ admin/                  # Admin panel (dashboard, products, orders)
-Γö£ΓöÇΓöÇ api/                    # AJAX API endpoints
-Γö£ΓöÇΓöÇ assets/                 # CSS, JS, Images
-Γöé   Γö£ΓöÇΓöÇ css/
-Γöé   Γö£ΓöÇΓöÇ js/
-Γöé   ΓööΓöÇΓöÇ images/
-Γö£ΓöÇΓöÇ config.php              # Database & app configuration
-Γö£ΓöÇΓöÇ database/               # SQL schema dump
-Γö£ΓöÇΓöÇ docs/                   # Project documentation & wiki
-Γöé   Γö£ΓöÇΓöÇ wiki/               # GitHub Wiki content
-Γöé   Γö£ΓöÇΓöÇ screenshots/        # App screenshots
-Γöé   ΓööΓöÇΓöÇ logo/               # Brand assets
-Γö£ΓöÇΓöÇ includes/               # Shared PHP partials (header, footer, auth)
-Γö£ΓöÇΓöÇ uploads/                # User-uploaded media (products, categories)
-Γö£ΓöÇΓöÇ .gitignore
-Γö£ΓöÇΓöÇ .htaccess               # Apache URL rewriting & security headers
-Γö£ΓöÇΓöÇ LICENSE
-ΓööΓöÇΓöÇ README.md
+├── .github/                # GitHub CI/CD, security, templates
+│   ├── workflows/          # GitHub Actions (CI/CD + CodeQL)
+│   ├── ISSUE_TEMPLATE/     # Bug report & feature request templates
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── SECURITY.md
+│   └── dependabot.yml
+├── admin/                  # Admin panel (dashboard, products, orders)
+├── api/                    # AJAX API endpoints
+├── assets/                 # CSS, JS, Images
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── config.php              # Database & app configuration
+├── database/               # SQL schema dump
+├── docs/                   # Project documentation & wiki
+│   ├── wiki/               # GitHub Wiki content
+│   ├── screenshots/        # App screenshots
+│   └── logo/               # Brand assets
+├── includes/               # Shared PHP partials (header, footer, auth)
+├── uploads/                # User-uploaded media (products, categories)
+├── .gitignore
+├── .htaccess               # Apache URL rewriting & security headers
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## ≡ƒÜÇ Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 
@@ -170,11 +117,11 @@ VENARO-Ecommerce-Website/
 | Email    | `admin@venaro.com` |
 | Password | `admin123`         |
 
-> ΓÜá∩╕Å **Change the admin password** immediately after first login in production.
+> ⚠️ **Change the admin password** immediately after first login in production.
 
 ---
 
-## ≡ƒôû Documentation
+## 📖 Documentation
 
 Comprehensive documentation is available in the [`docs/wiki/`](./docs/wiki/) directory:
 
@@ -188,9 +135,9 @@ Comprehensive documentation is available in the [`docs/wiki/`](./docs/wiki/) dir
 
 ---
 
-## ≡ƒ¢í∩╕Å Security
+## 🛡️ Security
 
-Security is a first-class concern in V├ëNARO:
+Security is a first-class concern in VÉNARO:
 
 - **SQL Injection** prevention via PDO prepared statements
 - **Password Security** via PHP `password_hash()` (bcrypt)
@@ -198,13 +145,13 @@ Security is a first-class concern in V├ëNARO:
 - **Input Validation** on all user-facing forms
 - **File Upload Restrictions** (JPEG, PNG, WEBP only; max 5MB)
 - **HTTPS Enforcement** via `.htaccess`
-- **Access Control** ΓÇö admin routes protected by role checks
+- **Access Control** — admin routes protected by role checks
 
 To report a security vulnerability, see [SECURITY.md](.github/SECURITY.md).
 
 ---
 
-## ≡ƒñ¥ Contributing
+## 🤝 Contributing
 
 We welcome contributions! Please read our [contribution guide](.github/PULL_REQUEST_TEMPLATE.md) before submitting a PR.
 
@@ -216,7 +163,7 @@ We welcome contributions! Please read our [contribution guide](.github/PULL_REQU
 
 ---
 
-## ≡ƒô£ License
+## 📜 License
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for details.
 
@@ -224,6 +171,6 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for details.
 
 <div align="center">
 
-Made with Γ¥ñ∩╕Å by **Vishal** | V├ëNARO Premium E-Commerce ┬⌐ 2025
+Made with ❤️ by **Vishal** | VÉNARO Premium E-Commerce © 2025
 
 </div>
