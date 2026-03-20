@@ -1,4 +1,4 @@
-# 💎 VÉNARO — E-Commerce Website
+# 💎 VÉNARO — E-Commerce Platform
 
 **A masterclass in full-stack web engineering. Built with PHP 8.2 & MySQL 8.0 for the modern luxury market.**
 
