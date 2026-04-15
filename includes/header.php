@@ -171,6 +171,14 @@ $flashMessage = getFlash();
                     </a>
                 </div>
 
+                <div class="nav-group" style="margin-top: 24px;">
+                    <span class="nav-label">Upgrade</span>
+                    <a href="https://vishaldev1.gumroad.com/l/VENARO" target="_blank" class="nav-link" style="background: #3b82f6; color: #fff; font-weight: 700;">
+                        <i data-lucide="shopping-bag" size="18"></i>
+                        <span>Buy Full Website</span>
+                    </a>
+                </div>
+
                 <?php if (isLoggedIn()): ?>
                 <div class="nav-group" style="margin-top: auto;">
                     <span class="nav-label">Session</span>
