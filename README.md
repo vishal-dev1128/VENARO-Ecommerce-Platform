@@ -24,7 +24,6 @@ It supports account-based access, order status handling, and monthly summaries i
 ### Screenshots
 
 ![Main Preview](preview.png)
-![Admin Dashboard](admin-dashboard.png)
 
 ## Key Features
 
