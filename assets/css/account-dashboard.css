@@ -5,41 +5,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
-/* ── CSS Variables ─────────────────────────────────────── */
+/* ── CSS Variables (M3 Color System) ─────────────────── */
 :root {
-    --dash-bg: #f8f8f8;
-    --dash-white: #ffffff;
-    --dash-sidebar-bg: #111111;
+    --dash-bg: #F5F5F5;
+    --dash-white: #FFFFFF;
+    --dash-sidebar-bg: #121212;
     --dash-sidebar-hover: #1e1e1e;
     --dash-sidebar-active: #000000;
-    --dash-text-primary: #111111;
-    --dash-text-secondary: #555555;
-    --dash-text-muted: #999999;
-    --dash-border: #eeeeee;
-    --dash-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    --dash-text-primary: #000000;
+    --dash-text-secondary: #6B7280;
+    --dash-text-muted: #9CA3AF;
+    --dash-border: #E0E0E0;
+    --dash-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
     --dash-shadow-md: 0 4px 12px rgba(0,0,0,0.06);
     --dash-shadow-lg: 0 10px 30px rgba(0,0,0,0.08);
-    --dash-radius: 0;
-    --dash-radius-sm: 0;
-    --dash-radius-lg: 0;
+    --dash-radius: 12px;
+    --dash-radius-sm: 8px;
+    --dash-radius-lg: 16px;
 
     /* Monochrome Accent System */
     --accent-blue: #000000;
-    --accent-blue-light: #f5f5f5;
+    --accent-blue-light: #F0F0F0;
     --accent-green: #333333;
-    --accent-green-light: #f5f5f5;
+    --accent-green-light: #F0F0F0;
     --accent-red: #555555;
-    --accent-red-light: #f5f5f5;
+    --accent-red-light: #F0F0F0;
     --accent-yellow: #444444;
-    --accent-yellow-light: #f5f5f5;
+    --accent-yellow-light: #F0F0F0;
     --accent-purple: #333333;
-    --accent-purple-light: #f5f5f5;
+    --accent-purple-light: #F0F0F0;
     --accent-pink: #555555;
-    --accent-pink-light: #f5f5f5;
+    --accent-pink-light: #F0F0F0;
 
     --dash-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --dash-font-heading: 'Montserrat', sans-serif;
-    --dash-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    --dash-font-heading: 'Inter', sans-serif;
+    --dash-ease: cubic-bezier(0.2, 0, 0, 1);
 }
 
 /* ── Reset for dashboard ───────────────────────────────── */

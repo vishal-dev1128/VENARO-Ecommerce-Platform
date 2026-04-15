@@ -1,24 +1,69 @@
-/* VÉNARO Admin Panel - Modern Pixel Commerce Design */
+/* VÉNARO Admin Panel — Material 3 Design System */
 
 :root {
+    /* ===== Material 3 Design Tokens ===== */
+    --md-sys-color-primary: #000000;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #e0e0e0;
+    --md-sys-color-on-primary-container: #1a1a1a;
+    --md-sys-color-secondary: #424242;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #f0f0f0;
+    --md-sys-color-on-secondary-container: #1a1a1a;
+    --md-sys-color-surface: #ffffff;
+    --md-sys-color-on-surface: #1a1a1a;
+    --md-sys-color-surface-variant: #f5f5f5;
+    --md-sys-color-on-surface-variant: #444444;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fafafa;
+    --md-sys-color-surface-container: #f5f5f5;
+    --md-sys-color-surface-container-high: #eeeeee;
+    --md-sys-color-surface-container-highest: #e0e0e0;
+    --md-sys-color-outline: #bdbdbd;
+    --md-sys-color-outline-variant: #e0e0e0;
+    --md-sys-color-error: #B3261E;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-inverse-surface: #1a1a1a;
+    --md-sys-color-inverse-on-surface: #f5f5f5;
+
+    /* M3 Shape Scale */
+    --md-sys-shape-corner-none: 0px;
+    --md-sys-shape-corner-extra-small: 4px;
+    --md-sys-shape-corner-small: 8px;
+    --md-sys-shape-corner-medium: 12px;
+    --md-sys-shape-corner-large: 16px;
+    --md-sys-shape-corner-extra-large: 28px;
+    --md-sys-shape-corner-full: 9999px;
+
+    /* M3 Elevation */
+    --md-sys-elevation-1: 0 1px 3px 1px rgba(0,0,0,0.08), 0 1px 2px 0 rgba(0,0,0,0.06);
+    --md-sys-elevation-2: 0 2px 6px 2px rgba(0,0,0,0.08), 0 1px 2px 0 rgba(0,0,0,0.06);
+    --md-sys-elevation-3: 0 4px 8px 3px rgba(0,0,0,0.08), 0 1px 3px 0 rgba(0,0,0,0.06);
+
+    /* M3 Motion */
+    --md-sys-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+    --md-sys-motion-duration-short: 200ms;
+    --md-sys-motion-duration-medium: 400ms;
+
+    /* ===== Original Admin Tokens ===== */
     /* Primary Colors - Black & White */
     --admin-primary: #000000;
     --admin-primary-hover: #222222;
     --admin-primary-light: rgba(0, 0, 0, 0.06);
 
     /* Background Colors */
-    --admin-bg: #f8f8f8;
-    --admin-sidebar-bg: #111111;
+    --admin-bg: #F5F5F5;
+    --admin-sidebar-bg: #121212;
     --admin-card-bg: #ffffff;
 
     /* Text Colors */
-    --admin-text: #111111;
-    --admin-text-muted: #666666;
-    --admin-text-light: #999999;
+    --admin-text: #000000;
+    --admin-text-muted: #6B7280;
+    --admin-text-light: #9CA3AF;
 
     /* Border & Shadow */
-    --admin-border: #eeeeee;
-    --admin-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --admin-border: #E0E0E0;
+    --admin-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
     --admin-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.10);
 
     /* Status Colors - Kept subtle */
@@ -1144,4 +1189,234 @@ body {
     border-radius: 12px;
     font-size: 12px;
     color: var(--admin-text);
+}
+
+/* ============================================
+   MATERIAL 3 — ADMIN DESIGN SYSTEM LAYER
+   ============================================ */
+
+/* ---- M3 Material Symbols Support ---- */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.material-symbols-outlined.filled {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+/* ---- M3 Sidebar Navigation (Navigation Drawer) ---- */
+.sidebar .nav-link {
+    border-left: none;
+    border-radius: 0 var(--md-sys-shape-corner-full) var(--md-sys-shape-corner-full) 0;
+    margin: 2px 0 2px 0;
+    padding: 10px 16px;
+    transition: all var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar .nav-link.active {
+    background: rgba(255, 255, 255, 0.14);
+    border-left: none;
+    border-radius: 0 var(--md-sys-shape-corner-full) var(--md-sys-shape-corner-full) 0;
+    position: relative;
+}
+
+.sidebar .nav-link.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 3px;
+    background: #fff;
+    border-radius: 0 var(--md-sys-shape-corner-full) var(--md-sys-shape-corner-full) 0;
+}
+
+.sidebar .nav-link .material-symbols-outlined {
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+/* ---- M3 Badge Count (Messages, Notifications) ---- */
+.md-badge-count {
+    margin-left: auto;
+    background: var(--md-sys-color-error);
+    color: var(--md-sys-color-on-error);
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: var(--md-sys-shape-corner-full);
+    padding: 1px 7px;
+    min-width: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ---- M3 Top Bar Enhancement ---- */
+.top-bar {
+    background: var(--md-sys-color-surface);
+    box-shadow: var(--md-sys-elevation-1);
+    border-bottom: none;
+}
+
+.top-bar .material-symbols-outlined {
+    font-size: 20px;
+}
+
+/* ---- M3 Stat Cards Enhancement ---- */
+.stat-card-modern {
+    border-radius: var(--md-sys-shape-corner-medium);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    border-top: 3px solid var(--md-sys-color-primary);
+    box-shadow: var(--md-sys-elevation-1);
+    transition: box-shadow var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard),
+                transform var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+}
+
+.stat-card-modern:hover {
+    box-shadow: var(--md-sys-elevation-3);
+    transform: translateY(-2px);
+}
+
+.stat-icon-wrapper {
+    border-radius: var(--md-sys-shape-corner-medium);
+    background: var(--md-sys-color-surface-container);
+}
+
+.stat-icon-wrapper .material-symbols-outlined {
+    font-size: 20px;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+/* ---- M3 Modern Cards Enhancement ---- */
+.modern-card {
+    border-radius: var(--md-sys-shape-corner-medium);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+.modern-card:hover {
+    box-shadow: var(--md-sys-elevation-2);
+}
+
+.modern-card-header {
+    background: var(--md-sys-color-surface-container-low);
+}
+
+/* ---- M3 Tables Enhancement ---- */
+.modern-table thead th {
+    background: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.modern-table tbody tr:hover {
+    background: var(--md-sys-color-surface-container-low);
+}
+
+/* ---- M3 Buttons Enhancement ---- */
+.btn {
+    border-radius: var(--md-sys-shape-corner-full);
+    transition: all var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+}
+
+.btn-primary {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+.btn-outline-dark {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+/* ---- M3 Icon Button Enhancement ---- */
+.icon-btn {
+    border-radius: var(--md-sys-shape-corner-full);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    transition: all var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+}
+
+.icon-btn:hover {
+    background: var(--md-sys-color-primary);
+    border-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
+
+/* ---- M3 Progress Bar Enhancement ---- */
+.progress {
+    border-radius: var(--md-sys-shape-corner-full);
+    background: var(--md-sys-color-surface-container-highest);
+}
+
+.progress-bar {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+/* ---- M3 Badge Enhancement ---- */
+.badge {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+/* ---- M3 Form Controls Enhancement ---- */
+.form-control:focus {
+    border-bottom-color: var(--md-sys-color-primary);
+    box-shadow: none;
+}
+
+/* ---- M3 Alerts Enhancement ---- */
+.alert {
+    border-radius: var(--md-sys-shape-corner-medium);
+}
+
+/* ---- M3 Action Buttons Enhancement ---- */
+.action-btn {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+/* ---- M3 Admin Avatar ---- */
+.admin-avatar {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+/* ---- M3 Quick Nav Cards ---- */
+.quick-nav-card {
+    border-radius: var(--md-sys-shape-corner-medium);
+}
+
+.quick-nav-item {
+    border-radius: var(--md-sys-shape-corner-small);
+}
+
+/* ---- M3 Tags ---- */
+.tag-badge {
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+/* ---- M3 Variant Container ---- */
+.variant-modern-container {
+    border-radius: var(--md-sys-shape-corner-medium);
 }
