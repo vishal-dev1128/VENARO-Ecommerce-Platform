@@ -1,4 +1,4 @@
-# 💎 V\u00c9NARO \u2014 Premium E-Commerce Website (Source Code For Sale)
+# 💎 VÉNARO — Premium E-Commerce Website (Source Code For Sale)
 
 **A masterclass in full-stack web engineering. Built with PHP 8.2 & MySQL 8.0 for the modern luxury market.**
 
@@ -13,9 +13,9 @@
 
 ---
 
-## \ud83d\ude80 Purchase the Full Source Code
+## 🚀 Purchase the Full Source Code
 
-Ready to launch your own high-end luxury e-commerce platform? Skip months of development and acquire the V\u00c9NARO source code.
+Ready to launch your own high-end luxury e-commerce platform? Skip months of development and acquire the VÉNARO source code.
 
 **What you get in the full package:**
 - Complete PHP 8.2 & MySQL codebase.
@@ -25,11 +25,10 @@ Ready to launch your own high-end luxury e-commerce platform? Skip months of dev
 - Product Management with Multi-image uploads.
 - Complete Database schema (`.sql`).
 
-**Contact to Buy:**
-\ud83d\udce7 **Email:** `[Your Email Here]`
-*(Or link your Gumroad/Patreon/Storefront here)*
+**Purchase on Gumroad:**
+🛒 [**Buy VÉNARO on Gumroad**](https://vishaldev1.gumroad.com/l/VENARO)
 
 ---
 
-\ud83d\udee0\ufe0f **V\u00c9NARO \u2014 Define Your Luxury. Engineer Your Success.**
-&copy; 2026 V\u00c9NARO Premium E-Commerce. All Rights Reserved.
+🛠️ **VÉNARO — Define Your Luxury. Engineer Your Success.**
+&copy; 2026 VÉNARO Premium E-Commerce. All Rights Reserved.
