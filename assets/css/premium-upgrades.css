@@ -1,0 +1,1062 @@
+/* ═══════════════════════════════════════════════════════════
+   VÉNARO Premium Lightbox & Size Guide — Luxury Overlay System
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Lightbox Overlay ─────────────────────────────────────── */
+.vn-lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+    cursor: zoom-out;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.vn-lightbox-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.vn-lightbox-img {
+    max-width: 85vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border: none;
+    transform: scale(0.92);
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+    user-select: none;
+}
+
+.vn-lightbox-overlay.active .vn-lightbox-img {
+    transform: scale(1);
+}
+
+.vn-lightbox-close {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 32px;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+    z-index: 10001;
+    line-height: 1;
+}
+
+.vn-lightbox-close:hover {
+    color: #fff;
+    transform: scale(1.15);
+}
+
+.vn-lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.8);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 0;
+    z-index: 10001;
+}
+
+.vn-lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.vn-lightbox-prev { left: 24px; }
+.vn-lightbox-next { right: 24px; }
+
+.vn-lightbox-counter {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Zoom cursor on product main image */
+.main-image-wrapper img#mainImage {
+    cursor: zoom-in;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* ── Size Guide Modal ────────────────────────────────────── */
+.vn-sizeguide-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.vn-sizeguide-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.vn-sizeguide-modal {
+    background: #fff;
+    max-width: 620px;
+    width: 92%;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 0;
+    transform: translateY(20px) scale(0.97);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vn-sizeguide-overlay.active .vn-sizeguide-modal {
+    transform: translateY(0) scale(1);
+}
+
+.vn-sizeguide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 28px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.vn-sizeguide-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+}
+
+.vn-sizeguide-close {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 4px;
+}
+
+.vn-sizeguide-close:hover {
+    color: #000;
+}
+
+.vn-sizeguide-body {
+    padding: 24px 28px 32px;
+}
+
+.vn-sizeguide-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 24px;
+}
+
+.vn-sizeguide-tab {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaa;
+    padding: 10px 18px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.vn-sizeguide-tab.active {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.vn-sizeguide-tab:hover {
+    color: #555;
+}
+
+.vn-sg-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+.vn-sg-table thead th {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888;
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.vn-sg-table thead th:first-child {
+    text-align: left;
+}
+
+.vn-sg-table tbody td {
+    padding: 12px 14px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.vn-sg-table tbody td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: #111;
+}
+
+.vn-sg-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.vn-sg-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.vn-sg-tip {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: #f8f8f8;
+    border-left: 3px solid #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.vn-sg-tip strong {
+    color: #111;
+}
+/* ── VÉNARO Elite Membership Cards ────────────────────── */
+.vn-loyalty-card {
+    position: relative;
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    background: #111;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.vn-loyalty-card:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+.vn-loyalty-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Tier Specifics */
+.vn-tier-bronze { background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); }
+.vn-tier-silver { 
+    background: linear-gradient(135deg, #757f9a 0%, #d7dde8 100%); 
+    color: #1a1a1a;
+}
+.vn-tier-gold { 
+    background: linear-gradient(135deg, #111 0%, #2c3e50 100%);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+.vn-tier-gold .vn-tier-tag { background: #d4af37; color: #000; }
+.vn-tier-gold::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(115deg, transparent 40%, rgba(212, 175, 55, 0.1) 45%, rgba(212, 175, 55, 0.2) 50%, rgba(212, 175, 55, 0.1) 55%, transparent 60%);
+    background-size: 200% 100%;
+    animation: vnHolo 5s infinite linear;
+}
+
+@keyframes vnHolo {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.vn-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.vn-brand-mini {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.vn-tier-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.vn-card-bottom {
+    z-index: 1;
+}
+
+.vn-points-display {
+    margin-bottom: 15px;
+}
+
+.vn-points-val {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    display: block;
+}
+
+.vn-points-label {
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.vn-progress-container {
+    background: rgba(0,0,0,0.1);
+    height: 6px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vn-tier-silver .vn-progress-container { background: rgba(0,0,0,0.05); }
+
+.vn-progress-bar {
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    transition: width 1s ease-out;
+}
+
+.vn-tier-gold .vn-progress-bar { background: #d4af37; }
+
+.vn-tier-info {
+    font-size: 11px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+/* Size guide link button */
+.vn-sizeguide-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #888;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    margin-top: 8px;
+    transition: color 0.2s;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.vn-sizeguide-link:hover {
+    color: #000;
+}
+
+
+/* ── Skeleton Loaders ────────────────────────────────────── */
+@keyframes vn-shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.vn-skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 37%, #f0f0f0 63%);
+    background-size: 200% 100%;
+    animation: vn-shimmer 1.8s ease-in-out infinite;
+    border-radius: 0;
+}
+
+.vn-skeleton-card {
+    aspect-ratio: 3/4;
+    width: 100%;
+}
+
+.vn-skeleton-text {
+    height: 14px;
+    width: 70%;
+    margin: 12px auto 0;
+}
+
+.vn-skeleton-price {
+    height: 12px;
+    width: 40%;
+    margin: 8px auto 0;
+}
+
+
+/* ── Enhanced Order Tracking Timeline ────────────────────── */
+.vn-timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 8px;
+    margin: 32px 0 16px;
+}
+
+.vn-timeline::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: #e9ecef;
+    z-index: 0;
+}
+
+.vn-timeline-progress {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 3px;
+    background: #000;
+    z-index: 1;
+    transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vn-timeline-step {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.vn-timeline-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    color: #bbb;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    margin-bottom: 10px;
+}
+
+.vn-timeline-step.completed .vn-timeline-icon {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.vn-timeline-step.active .vn-timeline-icon {
+    background: #fff;
+    border-color: #000;
+    color: #000;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+    animation: vn-pulse 2s infinite;
+}
+
+@keyframes vn-pulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08); }
+    50% { box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04); }
+}
+
+.vn-timeline-step.cancelled .vn-timeline-icon {
+    background: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.vn-timeline-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bbb;
+    text-align: center;
+}
+
+.vn-timeline-step.completed .vn-timeline-label,
+.vn-timeline-step.active .vn-timeline-label {
+    color: #111;
+}
+
+.vn-timeline-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+.vn-timeline-step.completed .vn-timeline-date {
+    color: #666;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PHASE 2: Quick View Modal
+   ═══════════════════════════════════════════════════════════ */
+
+.vn-qv-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 9995;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 20px;
+}
+
+.vn-qv-overlay.active { opacity: 1; visibility: visible; }
+
+.vn-qv-modal {
+    background: #fff;
+    width: 100%;
+    max-width: 860px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: translateY(24px) scale(0.97);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+}
+
+.vn-qv-overlay.active .vn-qv-modal { transform: translateY(0) scale(1); }
+
+.vn-qv-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid #eee;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.vn-qv-close:hover { background: #000; color: #fff; }
+
+.vn-qv-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 420px;
+}
+
+.vn-qv-image-col { padding: 24px; background: #f8f8f8; }
+.vn-qv-info-col { padding: 32px 28px; }
+
+.vn-qv-loading {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.vn-qv-loading-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #eee;
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: vnSpin 0.8s linear infinite;
+}
+
+@keyframes vnSpin { to { transform: rotate(360deg); } }
+
+.vn-qv-size-btn {
+    min-width: 44px;
+    height: 44px;
+    padding: 0 10px;
+    background: #fff;
+    border: 1.5px solid #ddd;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.vn-qv-size-btn:hover { border-color: #000; }
+.vn-qv-size-btn.active { background: #000; color: #fff; border-color: #000; }
+
+@media (max-width: 640px) {
+    .vn-qv-body { grid-template-columns: 1fr; }
+    .vn-qv-image-col { max-height: 260px; overflow: hidden; }
+}
+
+/* ── Quick View Hover Button ──────────────────────────── */
+.vn-quickview-btn {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: rgba(255,255,255,0.96);
+    border: 1px solid #e0e0e0;
+    padding: 9px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.product-image-wrapper:hover .vn-quickview-btn {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.vn-quickview-btn:hover { background: #000; color: #fff; border-color: #000; }
+
+/* ── Multi-view hover image transition ──────────────────── */
+.vn-img-primary { transition: opacity 0.2s ease; }
+
+/* ── Sticky Add-to-Cart Bar ─────────────────────────────── */
+.vn-sticky-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    z-index: 500;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.08);
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vn-sticky-bar.visible { transform: translateY(0); }
+
+.vn-sticky-bar-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vn-sticky-bar-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.vn-sticky-bar-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 13px 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.vn-sticky-bar-btn:hover { background: #222; }
+
+@media (max-width: 576px) {
+    .vn-sticky-bar-name, .vn-sticky-bar-price { display: none; }
+    .vn-sticky-bar-btn { width: 100%; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   VÉNARO GLOBAL COLOR THEME — Full Site Consistency Layer
+   Primary:  #000      (Black — Text, Nav, Borders)
+   Accent:   #003333   (Forest Teal — Buy Now, CTA Highlights)
+   Gold:     #f5a623   (Star Ratings)
+   Sale:     #c0392b   (Discount Badges)
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── CTA / Primary Action Buttons ─────────────────────────── */
+.btn-buy-now-solid,
+.btn-checkout,
+.btn-place-order,
+a.btn-place-order,
+button.btn-place-order,
+.btn-accent {
+    background: var(--accent-color) !important;
+    color: #fff !important;
+    border: none !important;
+    transition: background 0.25s ease, transform 0.2s ease !important;
+}
+
+.btn-buy-now-solid:hover,
+.btn-checkout:hover,
+.btn-place-order:hover,
+.btn-accent:hover {
+    background: var(--accent-hover) !important;
+    transform: translateY(-1px);
+}
+
+/* ── Add-to-Cart / Secondary Action ───────────────────────── */
+.btn-add-to-cart,
+.btn-add-cart-outline {
+    background: transparent !important;
+    color: #111 !important;
+    border: 1.5px solid #111 !important;
+    transition: background 0.25s ease, color 0.25s ease !important;
+}
+
+.btn-add-to-cart:hover,
+.btn-add-cart-outline:hover {
+    background: #111 !important;
+    color: #fff !important;
+}
+
+/* ── Sale / Discount Badges ───────────────────────────────── */
+.product-badge.sale,
+.badge-sale,
+.vn-badge-sale {
+    background: var(--sale-color) !important;
+    color: #fff !important;
+}
+
+/* Discount % text on product cards */
+.product-discount,
+.discount-label,
+.price-discount {
+    color: var(--sale-color) !important;
+    font-weight: 600;
+}
+
+/* Discount % text on product-detail header area */
+.product-price-premium .price-discount {
+    color: var(--sale-color) !important;
+    font-weight: 700;
+    font-size: 13px;
+    background: rgba(192,57,43,0.08);
+    padding: 2px 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* ── Product Card Rating ──────────────────────────────────── */
+.product-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin: 4px 0 6px;
+}
+
+.product-card-rating .material-symbols-outlined {
+    font-size: 13px !important;
+    color: var(--star-color) !important;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20 !important;
+}
+
+.product-card-rating .star_border {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20 !important;
+    opacity: 0.35 !important;
+}
+
+.product-card-rating-count {
+    font-size: 11px;
+    color: #999;
+    margin-left: 4px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ── All rating stars everywhere ─────────────────────────── */
+.rating-big-stars .material-symbols-outlined,
+.review-stars-small .material-symbols-outlined,
+.vn-ctl-stars .material-symbols-outlined,
+.star-picker .material-symbols-outlined,
+.vn-qv-info-col .star-row .material-symbols-outlined {
+    color: var(--star-color) !important;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 !important;
+}
+
+/* Empty (border) stars should look lighter */
+.rating-big-stars .material-symbols-outlined.empty-star,
+span.star_border {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' -25, 'opsz' 24 !important;
+    opacity: 0.3 !important;
+}
+
+/* ── Navbar Active Link Accent ────────────────────────────── */
+.nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+.nav-link.active::after {
+    background-color: var(--accent-color) !important;
+    transform: translateX(-50%) scaleX(1) !important;
+}
+
+/* ── Cart & Wishlist Badge ────────────────────────────────── */
+.badge-notification.bg-danger {
+    background-color: var(--accent-color) !important;
+    border-radius: 50px;
+}
+
+/* ── Price — Current Sale Price ─────────────────────────── */
+.price-current {
+    color: #111 !important;
+}
+
+/* Product Detail Page — Current Price */
+.product-price-premium .price-current {
+    color: #000 !important;
+}
+
+/* ── "Best Price" / Coupon Banner In Detail Page ─────────── */
+.vn-best-price-bar,
+.coupon-highlight {
+    background: var(--success-bg) !important;
+    border: 1px solid rgba(30, 70, 32, 0.1) !important;
+    color: var(--success-color) !important;
+    border-radius: 4px !important;
+    padding: 12px 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    font-size: 13px !important;
+    margin: 20px 0 !important;
+}
+
+/* ── Form Focus Ring —Accent ──────────────────────────────── */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 0 3px var(--accent-light) !important;
+}
+
+/* ── Section Divider Line ─────────────────────────────────── */
+.section-title::after {
+    background-color: var(--accent-color) !important;
+    width: 36px !important;
+    height: 2px !important;
+}
+
+/* ── Footer Social Links Hover ────────────────────────────── */
+.social-links a:hover {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #fff !important;
+}
+
+/* ── Shop Page Filter Checkboxes ─────────────────────────── */
+.form-check-input:checked {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+}
+
+/* ── Range Slider (Price) ─────────────────────────────────── */
+input[type="range"]::-webkit-slider-thumb {
+    background: var(--accent-color) !important;
+}
+input[type="range"]::-moz-range-thumb {
+    background: var(--accent-color) !important;
+}
+
+/* ── Verified Purchase Badge ──────────────────────────────── */
+.verified-badge {
+    color: var(--success-color) !important;
+    background: rgba(46, 125, 50, 0.08) !important;
+}
+
+/* ── Trust Badges (Delivery, etc.) ─────────────────────────── */
+.trust-badge-item i,
+.trust-badge-item .material-symbols-outlined {
+    color: var(--accent-color) !important;
+    opacity: 1 !important;
+}
+
+/* ── Rating Bar Fill ──────────────────────────────────────── */
+.rating-bar-fill {
+    background: linear-gradient(90deg, var(--star-color), #f7c948) !important;
+}
+
+/* ── Sticky ATC Button ────────────────────────────────────── */
+.vn-sticky-bar-btn {
+    background: var(--accent-color) !important;
+}
+
+.vn-sticky-bar-btn:hover {
+    background: var(--accent-hover) !important;
+}
+
+/* ── Quick View Size Selected ─────────────────────────────── */
+.vn-qv-size-btn.active {
+    background: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #fff !important;
+}
+
+/* ── Size Box Selected (Product Detail) ──────────────────── */
+.size-box.active {
+    border-color: var(--accent-color) !important;
+    color: var(--accent-color) !important;
+    background: rgba(0,51,51,0.04) !important;
+}
+
+/* ── Collection "Complete The Look" ATC ─────────────────── */
+.vn-ctl-atc-btn:hover,
+.vn-ctl-atc-btn.added {
+    background: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #fff !important;
+}
+
+/* ── Cart Page Checkout CTA ──────────────────────────────── */
+a[href*="checkout"],
+button[href*="checkout"] {
+    background: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #fff !important;
+}
+
+/* ── Order Status Badge ───────────────────────────────────── */
+.order-status-pending  { color: #e67e22 !important; background: rgba(230,126,34,0.1) !important; }
+.order-status-processing { color: var(--accent-color) !important; background: var(--accent-light) !important; }
+.order-status-shipped  { color: #2980b9 !important; background: rgba(41,128,185,0.1) !important; }
+.order-status-delivered { color: var(--success-color) !important; background: rgba(46,125,50,0.1) !important; }
+.order-status-cancelled { color: var(--sale-color) !important; background: rgba(192,57,43,0.1) !important; }
+
+/* ── "Write a Review" Button ─────────────────────────────── */
+.btn-write-review,
+button.btn-write-review {
+    border-color: var(--accent-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.btn-write-review:hover {
+    background: var(--accent-color) !important;
+    color: #fff !important;
+}
+
+/* ── "Quick Add" Universal Button ───────────────────────── */
+.vn-ctl-atc-btn {
+    background: transparent !important;
+    border: 1.5px solid #000 !important;
+    padding: 10px 16px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    width: 100% !important;
+    color: #000 !important;
+}
+
+.vn-ctl-atc-btn:hover,
+.vn-ctl-atc-btn.active {
+    background: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.vn-ctl-atc-btn.added {
+    background: #2e7d32 !important;
+    border-color: #2e7d32 !important;
+    color: #fff !important;
+}
+
+.vn-ctl-atc-btn:disabled {
+    cursor: wait !important;
+    opacity: 0.8 !important;
+}
+
