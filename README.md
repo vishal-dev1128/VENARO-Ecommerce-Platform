@@ -21,51 +21,10 @@
 
 <br/>
 
-[🚀 Quick Start](#-quick-start) &nbsp;·&nbsp; [📸 Extensive Gallery](#-extensive-visual-showcase) &nbsp;·&nbsp; [🛠️ Core Architecture](#-core-architecture--feature-ecosystem) &nbsp;·&nbsp; [🛡️ Security Posture](#-security-posture) &nbsp;·&nbsp; [📖 Documentation](#-technical-documentation)
-
 ---
 
 </div>
 
-## 🚀 Quick Start
-
-### 📋 Prerequisites
-Ensure your local development or production environment meets these strict requirements:
-- **Web Server**: Apache 2.4.x (XAMPP 8.2+ highly recommended for Windows local devs)
-- **Engine**: PHP 8.2.0 or higher
-- **Database**: MySQL 8.0.x or MariaDB equivalent
-- **Required PHP Extensions**: `pdo_mysql`, `mbstring`, `gd` (for image uploads and processing), `fileinfo`, `json`
-
-### 🛠️ One-Minute Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/vishal-dev1128/VENARO-Ecommerce-Website.git
-   cd VENARO-Ecommerce-Website
-   ```
-
-2. **Initialize the Relational Database**
-   - Head over to **phpMyAdmin** (`http://localhost/phpmyadmin`).
-   - Create a fresh database named `venaro_db` (using `utf8mb4_general_ci` collation).
-   - **Import** the schema located at `database/venaro_db.sql`.
-
-3. **Configure Environment Variables**
-   Open the root `config.php` file and securely map your local MySQL credentials:
-   ```php
-   <?php
-   // Core Database Configuration
-   define('DB_HOST', 'localhost');
-   define('DB_NAME', 'venaro_db');
-   define('DB_USER', 'your_username'); // Typically 'root' on local XAMPP
-   define('DB_PASS', 'your_password'); // Typically '' on local XAMPP
-   ?>
-   ```
-
-4. **Experience the Magic**
-   Start Apache & MySQL in your control panel and navigate to:
-   **`http://localhost/VENARO-Ecommerce-Website/`**
-
----
 
 ## 📸 Extensive Visual Showcase
 
@@ -180,56 +139,6 @@ In modern e-commerce, data integrity is everything. VÉNARO is fortified against
 - **🛑 Physical Access Guards**: Route-level middleware ensures that unauthenticated actors attempting to access the `/admin/` directory are immediately hard-redirected via Header manipulation.
 - **🤖 Automated CI/CD Oversight**: This repository enforces continuous integration. Every push triggers **GitHub Actions** running **CodeQL Advanced Security Scans** and deep PHP syntax linting.
 
----
-
-## 🗂️ Engineering Anatomy (Folder Structure)
-
-A meticulously organized application structure designed for scaling teams.
-
-```text
-VENARO-Ecommerce-Website/
-├── .github/                # Automation, CI/CD pipelines & Security Ops mapping
-│   ├── workflows/          # GitHub Actions (Linting + Advanced CodeQL Scans)
-│   └── ISSUE_TEMPLATE/     # Professional triage for bugs & feature ingestion
-├── admin/                  # [RESTRICTED] Administrative Command Center
-│   ├── includes/           # Server-side partials specific to admin views
-│   └── assets/             # Admin-exclusive CSS/JS bundles
-├── api/                    # AJAX JSON Endpoint Layer (Headless-ready architecture)
-├── assets/                 # Universal Frontend Delivery Network
-│   ├── css/                # Custom Premium Styling (Vanilla, highly optimized)
-│   └── js/                 # Modular Vanilla JavaScript bridging DOM & API
-├── database/               # Relational SQL Schema and Initial Seeding Data
-├── docs/                   # Brand Assets, High-Res Screenshots & Markdown Wiki
-├── includes/               # Reusable View Logic (Authentication, Navigation, Footers)
-├── uploads/                # Dynamic Media Storage for Product & Platform Imagery
-├── config.php              # Global Single-Source-of-Truth for Data Connectivity
-├── .htaccess               # Apache Redirection, URL Masking & Security Headers
-├── LICENSE                 # Public MIT Licensing Definition
-└── README.md               # You are exploring this document right now
-```
-
----
-
-## 📖 Technical Documentation
-
-For software engineers, DevOps, and administrators aiming to fork, extend, or deeply understand VÉNARO, refer to our highly detailed internal markdown wiki:
-
-- **[🏗️ System Architecture & Data Modeling](./docs/wiki/Architecture.md)**: Deep dive into the entity-relationship diagrams and structural patterns.
-- **[🔌 Headless API Reference](./docs/wiki/API-Reference.md)**: Comprehensive technical specs, payload expectations, and response schemas for all AJAX service endpoints.
-- **[⚙️ Admin Operations Guide](./docs/wiki/Admin-Guide.md)**: The ultimate playbook for managing the e-commerce lifecycle efficiently.
-
----
-
-## 🤝 Contributing & Global Community
-
-VÉNARO thrives on community innovation. If you're a developer looking to improve the core logic or optimize the frontend, join us!
-
-1. **Fork** the repository and create your feature branch: `git checkout -b feature/Optimization-Engine`
-2. Write clean, documented PHP 8 code adhering to modern PSR standards.
-3. Commit your changes logically: `git commit -m 'feat: optimize predictive search indexing'`
-4. Push to your branch and submit a **Pull Request**.
-
----
 
 ## 📜 Legal & Credits
 
