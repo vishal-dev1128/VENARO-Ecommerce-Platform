@@ -1,17 +1,13 @@
 # 💎 VÉNARO — Premium E-Commerce Website (Source Code For Sale)
 
+![Main Preview](preview.png)
+
 **A masterclass in full-stack web engineering. Built with PHP 8.2 & MySQL 8.0 for the modern luxury market.**
 
 > [!IMPORTANT]
 > **This repository is a presentation showcase.** The files here demonstrate the UI/UX. The complete, fully-functional PHP backend (Cart, Checkout, Admin Dashboard, Order Management, etc.) is a premium product available for purchase.
 
 <br/>
-
-## 📸 Preview
-
-![Main Preview](preview.png)
-
----
 
 ## 🚀 Purchase the Full Source Code
 

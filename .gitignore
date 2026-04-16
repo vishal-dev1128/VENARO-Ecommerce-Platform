@@ -1,5 +1,5 @@
 # ===========================
-# VENARO E-Commerce .gitignore
+# VENARO E-Commerce Demo .gitignore
 # ===========================
 
 # --- OS Generated ---
@@ -19,50 +19,38 @@ desktop.ini
 *.sublime-workspace
 *.code-workspace
 
-# --- PHP ---
-*.log
-error_log
+# --- SOURCE CODE HIDING (PREVENT FREE DOWNLOAD) ---
+# Ignore all PHP backend logic
+**/*.php
+# Allow ONLY the main demo index if needed (uncomment if you have a public index.php)
+#!index.php
 
-# --- Environment & Config Secrets ---
-.env
-.env.*
-config.local.php
-
-# --- Node / NPM (for docs tooling) ---
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-package-lock.json
-
-# --- Composer ---
-vendor/
-composer.lock
-
-# --- Uploads (user-generated content; not versioned) ---
-uploads/products/*
-uploads/categories/*
-uploads/collections/*
-!uploads/products/.gitkeep
-!uploads/categories/.gitkeep
-!uploads/collections/.gitkeep
-
-# --- Temp / Build artifacts ---
-*.tmp
-*.bak
-*.swp
-*.zip
-*.rar
-*.7z
+# Ignore sensitive directories
+config/
+database/
+includes/
 /tmp/
 /temp/
 
-# --- Docs temp files ---
-docs/node_modules/
-docs/package-lock.json
-docs/synopsis_temp/
-docs/*.mjs
+# --- Assets & Presentation ---
+# We keep assets/ and docs/ as they show the UI/UX
+!assets/
+!docs/
+!preview.png
+!README.md
+!LICENSE
+!PRD.md
+
+# --- Uploads (Exclude actual content) ---
+uploads/*
+!uploads/.gitkeep
+
+# --- Node / NPM ---
+node_modules/
+package-lock.json
 
 # --- XAMPP / Apache logs ---
+*.log
+error_log
 *.pid
 *.err
