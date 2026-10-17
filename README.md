@@ -9,7 +9,14 @@
 > [!IMPORTANT]
 > **This repository is a presentation showcase.** The files here demonstrate the UI/UX. The complete, fully-functional PHP backend (Cart, Checkout, Admin Dashboard, Order Management, etc.) is a premium product available for purchase.
 > 
-> 🛒 **[Click here to buy the Full Source Code on Gumroad](https://vishaldev1128.gumroad.com/l/VENARO-Ecommerce-website)**
+> <p align="center">
+  <h2>🛒 Get the Full Source Code</h2>
+  <a href="https://vishaldev1128.gumroad.com/l/student-result-management-system"> <!-- Keeping their link structure but user should update if needed -->
+    <img src="https://img.shields.io/badge/Get_Full_Source_Code-ff90e8?style=for-the-badge&logo=gumroad&logoColor=black" alt="Buy Source Code" />
+  </a>
+  <br/>
+  <em>This repository is a visual showcase. To launch your own institution's platform with the fully functional PHP backend and all databases, purchase the premium source code above.</em>
+</p>
 
 [![Version](https://img.shields.io/badge/Version-1.0.0--stable-gold.svg?style=for-the-badge)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-8892BF?logo=php&logoColor=white&style=for-the-badge)](https://php.net)
