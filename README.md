@@ -9,7 +9,7 @@
 > [!IMPORTANT]
 > **This repository is a presentation showcase.** The files here demonstrate the UI/UX. The complete, fully-functional PHP backend (Cart, Checkout, Admin Dashboard, Order Management, etc.) is a premium product available for purchase.
 > 
-> 🛒 **[Click here to buy the Full Source Code on Gumroad](https://vishaldev1.gumroad.com/l/VENARO)**
+> 🛒 **[Click here to buy the Full Source Code on Gumroad]([https://vishaldev1.gumroad.com/l/VENARO](https://vishaldev1128.gumroad.com/l/VENARO-Ecommerce-website))**
 
 [![Version](https://img.shields.io/badge/Version-1.0.0--stable-gold.svg?style=for-the-badge)](https://github.com/vishal-dev1128/VENARO-Ecommerce-Website)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-8892BF?logo=php&logoColor=white&style=for-the-badge)](https://php.net)
